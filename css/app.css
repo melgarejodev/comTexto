@@ -1,0 +1,63 @@
+body {
+  min-height: 100vh;
+}
+
+h1 {
+  letter-spacing: -0.03em;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+textarea.form-control {
+  resize: none;
+  border-radius: 0.75rem;
+}
+
+textarea.form-control:focus {
+  box-shadow: none;
+}
+
+.mode-btn {
+  border-radius: 999px;
+}
+
+.mode-btn.active {
+  color: #fff;
+}
+
+#translateBtn,
+#coffeeBtn,
+#copyBtn,
+#clearBtn {
+  border-radius: 0.75rem;
+}
+
+#outputText {
+  background-color: #fff;
+}
+
+.example-btn {
+  border-radius: 0.75rem;
+  white-space: normal;
+}
+
+.example-btn:hover {
+  transform: translateY(-1px);
+}
+
+.adsense-placeholder {
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed !important;
+  border-color: #ced4da !important;
+  border-radius: 0.75rem;
+}
+
+#translateBtn:disabled {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
