@@ -11,7 +11,7 @@ const modeButtons = document.querySelectorAll('.mode-btn');
 const exampleButtons = document.querySelectorAll('.example-btn');
 
 const MAX_LENGTH_TEXT = 500;
-const MIN_LENGTH_TEXT = 500;
+const MIN_LENGTH_TEXT = 8;
 
 const API_URL = 'http://localhost:8080/translate';
 
