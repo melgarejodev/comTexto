@@ -13,7 +13,8 @@ const exampleButtons = document.querySelectorAll('.example-btn');
 const MAX_LENGTH_TEXT = 500;
 const MIN_LENGTH_TEXT = 8;
 
-const API_URL = 'http://localhost:8080/translate';
+// const API_URL = 'http://localhost:8080/translate';
+const API_URL = 'https://dialetus-production.up.railway.app/translate';
 
 let selectedMode = 'corporatives';
 
