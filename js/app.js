@@ -81,6 +81,10 @@ async function translateText() {
       })
     });
 
+    if (response.status === 429) {
+      throw new Error("Calma, dedo nervoso. Muitas traduções em pouco tempo.");
+    }
+
     const data = await response.json();
 
     if (!response.ok || !data.success) {
@@ -89,6 +93,7 @@ async function translateText() {
 
     outputText.value = data.translatedText;
   } catch (error) {
+    result.value = error.message;
     alert(error.message || 'Erro inesperado ao traduzir.');
   } finally {
     translateBtn.disabled = false;
